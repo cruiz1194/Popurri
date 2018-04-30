@@ -17,7 +17,7 @@
 #
 # Merging from the command prompt will add diff markers to the files if there
 # are conflicts (Merging from VS is not affected by the settings below, in VS
-# the diff markers are never inserted). Diff markers may cause the following 
+# the diff markers are never inserted). Diff markers may cause the following
 # file extensions to fail to load in VS. An alternative would be to treat
 # these files as binary and thus will always conflict and require user
 # intervention with every merge. To do so, just uncomment the entries below
@@ -46,9 +46,9 @@
 
 ###############################################################################
 # diff behavior for common document formats
-# 
+#
 # Convert binary document formats to text before diffing them. This feature
-# is only available from the command line. Turn it on by uncommenting the 
+# is only available from the command line. Turn it on by uncommenting the
 # entries below.
 ###############################################################################
 #*.doc   diff=astextplain
@@ -61,3 +61,21 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+###############################################################################
+*.mlx -crlf -diff -merge
+*.mat -crlf -diff -merge
+*.fig -crlf -diff -merge
+*.p -crlf -diff -merge
+*.slx -crlf -diff -merge
+*.mdl -crlf -diff -merge
+*.mdlp -crlf -diff -merge
+*.slxp -crlf -diff -merge
+*.sldd -crlf -diff -merge
+*.mexa64 -crlf -diff -merge
+*.mexw64 -crlf -diff -merge
+*.mexmaci64 -crlf -diff -merge
+*.xlsx -crlf -diff -merge
+*.docx -crlf -diff -merge
+*.pdf -crlf -diff -merge
+*.jpg -crlf -diff -merge
+*.png -crlf -diff -merge
